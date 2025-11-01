@@ -2,11 +2,6 @@ import pytest
 from main import BooksCollector
 
 
-@pytest.fixture
-def collector():
-    return BooksCollector()
-
-
 # ---------- add_new_book ----------
 def test_add_new_book_add_two_books(collector):
     collector.add_new_book('Гордость и предубеждение и зомби')
